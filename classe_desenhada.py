@@ -23,5 +23,5 @@ class Retangulo:
 
         print('└' + espaco_base + '┘')
 
-retangulo = Retangulo(4, 2)
+retangulo = Retangulo(10, 10)
 retangulo.imagens()
