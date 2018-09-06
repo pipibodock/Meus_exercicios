@@ -1,6 +1,11 @@
 import logging
 
-logging.basicConfig(filename='classe_bola.log', level=logging.INFO, format='%(levelname)s:%(message)s')
+logging.basicConfig(
+    filename='classe_bola.log',
+    level=logging.INFO,
+    format='%(asctime)s, %(levelname)s:%(message)s',
+    datefmt='%d/%m/%Y %H:%M',
+)
 
 class Bola:
 
@@ -11,6 +16,7 @@ class Bola:
 
     def trocacor(self, novacor):
         self.cor = novacor
+        logging.info('cor da bola foi alterada: nova cor - %s', novacor)
         return self.cor
         
     def mostracor(self):
@@ -19,5 +25,5 @@ class Bola:
         return self.cor
 
 Bola('azul', 20, 'plastico').mostracor()
-#Bola('azul', 20, 'plastico').trocacor()
+Bola('azul', 20, 'plastico').trocacor('roxo')
 
