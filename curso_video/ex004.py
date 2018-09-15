@@ -1,0 +1,10 @@
+n = input('digite algo: ')
+
+print('o tipo desse valor é: ', type(n))
+print('é só espaço: ', n.isspace())
+print('é um inteiro: ', n.isnumeric())
+print('é alfabético: ', n.isalpha())
+print('é alfanumérico: ', n.isalnum())
+print('é maiúsculo: ', n.isupper())
+print('é minúsculo: ', n.islower())
+print('é capitalizado: ', n.istitle())
